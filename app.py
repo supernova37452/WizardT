@@ -41,6 +41,7 @@ def aes_ctr_decrypt(ct: bytes) -> bytes:
 def styles():
     return send_file(os.path.join(os.path.dirname(__file__), "styles.css"), mimetype="text/css")
 
+
 @app.route("/")
 def home():
     return render_template("home.html")
