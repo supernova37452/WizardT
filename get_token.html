@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css">
+  <title>Obtain Enchanted Token</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h2>Obtain Enchanted Token</h2>
+      <p><strong>Plaintext:</strong> <code>username=guests|role=user</code></p>
+      <p><strong>Token (base64)</strong></p>
+      <div class="token">{{ token }}</div>
+      <div class="row">
+        <a class="btn warn" href="/use_token">Test Your Token</a>
+        <a class="btn alt" href="/">Return to the Great Hall</a>
+      </div>
+      <p class="note">
+        Your goal: craft a forged token that decrypts to <code>username=guest|role=admin</code>.<br>
+        Only then shall the flag reveal itself.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
